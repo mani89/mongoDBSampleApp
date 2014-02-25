@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    #formss
+        - each form in formss
+          div.form
+            div.created_at= form.created_at
+            div.name = form.name
+        a(href="/forms/new")!= "Add New Form"

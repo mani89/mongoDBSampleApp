@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1= title
+    div.newform
+        form( method="post")
+            div
+                div
+                    span.label Title :
+                    input(type="text", name="title", id="editFormTitle")
+                div
+                    span.label Name :
+                    input(type="text", name="name", id="editFormName")
+                div#editFormSubmit
+                    input(type="submit", value="Save")
+        a(href="/")!= "Back to Forms List"
